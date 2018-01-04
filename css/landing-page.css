@@ -55,12 +55,26 @@ header.masthead {
   padding: 3rem; }
 
 .showcase .showcase-img {
-  min-height: 30rem;
+  min-height: 34rem;
   background-size: cover; }
+
+@media (max-width: 1271px) {
+  .showcase .showcase-img {
+    min-height: 24rem; }  }
+
+@media (max-width: 989px) {
+  .showcase .showcase-img {
+    min-height: 32rem;  } }
+
 
 @media (min-width: 768px) {
   .showcase .showcase-text {
     padding: 7rem; } }
+
+@media (max-width: 443px) {
+  .showcase .showcase-img {
+    min-height: 16rem; }  }
+
 
 .features-icons {
   padding-top: 7rem;
@@ -74,6 +88,10 @@ header.masthead {
     .features-icons .features-icons-item:hover .features-icons-icon i {
       font-size: 5rem; }
 
+td, th {
+  width: auto;
+  padding: 5px;
+}
 
 
 .testimonials {
