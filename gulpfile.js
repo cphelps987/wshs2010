@@ -6,6 +6,7 @@ var cleanCSS = require('gulp-clean-css');
 var rename = require("gulp-rename");
 var pkg = require('./package.json');
 
+
 // Set the banner content
 var banner = ['/*!\n',
   ' * Start Bootstrap - <%= pkg.title %> v<%= pkg.version %> (<%= pkg.homepage %>)\n',
@@ -100,3 +101,5 @@ gulp.task('dev', ['browserSync', 'sass', 'minify-css'], function() {
   // Reloads the browser whenever HTML files change
   gulp.watch('*.html', browserSync.reload);
 });
+
+
